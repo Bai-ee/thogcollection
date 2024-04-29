@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crudeboys</title>
+    <link rel="stylesheet" href="main.css" />
+
+  <!-- og-meta -->
+  <meta name="description" content="Thog website">
+  <meta property="og:title" content="Thog">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="images/1.png">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  <!-- collection viewer -->
+  <script src="./openseadragon/openseadragon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.js"></script>
+
+  <!-- Import the component -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <!-- gsap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>-->
+  <!-- <script src="js/https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> -->
+
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="content">
+          <img class="content__img" src="images/1.png" />
+          <img class="content__img" src="images/2.png" />
+          <img class="content__img" src="images/3.png" />
+          <img class="content__img" src="images/4.png" />
+          <img class="content__img" src="images/5.png" />
+          <img class="content__img" src="images/6.png" />
+          <img class="content__img" src="images/7.png" />
+          <img class="content__img" src="images/8.png" />
+          <img class="content__img" src="images/9.png" />
+          <img class="content__img" src="images/10.png" />
+          <img class="content__img" src="images/12.png" />
+          <img class="content__img" src="images/13.png" />
+          <img class="content__img" src="images/14.png" />
+          <img class="content__img" src="images/15.png" />
+          <img class="content__img" src="images/16.png" />
+          <img class="content__img" src="images/17.png" />
+          <img class="content__img" src="images/18.png" />
+          <img class="content__img" src="images/19.png" />
+        </div>
+      </main>
+      
+      <!-- stageblock -->
+      <!-- <div id="stageBlock" style="background-color:black; width:100vw; height:100vh; z-index:99999999; position:fixed; top:0"></div> -->
+
+
+<!-- Navigation section -->
+<!-- <nav style="background-color:black"> -->
+  <!-- Logo section within the nav -->
+  <!-- <div class="nav-logo">
+    <div class="nav-link">
+      <a href="index.html"> -->
+        <!-- Emoji logo with adjusted line height and negative margin -->
+        <!-- <h1 class="utf-paragraph" style="line-height: 1.2em; margin-top: calc(var(--scale-factor) * -2.2);">🃏</h1>
+      </a>
+    </div>
+  </div> -->
+  <!-- Navigation links -->
+  <!-- <div class="nav-links">
+    <div class="nav-link"><a href="" target="blank_" >Telegram</a></div>
+    <div class="nav-link"><a href=""  target="blank_" >Twitter</a></div>
+  </div>
+</nav> -->
+
+<!-- Home page content section -->
+<section class="content">
+  <div id="homepage">
+    <img class="image" style="max-width:300px;" src="images/1.png" alt="Thog  Logo">
+    <div class="content-box">
+      <div class="headline">Thog website</div>
+      <div class="ibm-plex-mono-regular paragraph">
+        Thog<b> </b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collection view section -->
+<section class="content reveal">
+  <div id="homepage_traits" style="background-color:black">
+    <div class="content-box">
+      <div class="headline" style="color:red;">Thogart</div>
+      <!-- <div class="ibm-plex-mono-regular paragraph" style="color:red;">
+        Crudeboys is a 522 count card collection on doginals based on the 52 card standard playing card deck.<b> Inscription #s 109748927 - 109768927</b>
+      </div> -->
+    </div>
+    <div id="openseadragon1" style="width: 500px; max-width:100vw; height: 500px"></div>
+
+    <!-- JavaScript for OpenSeadragon viewer -->
+    <script type="text/javascript">
+      console.log(OpenSeadragon);
+      var viewer = OpenSeadragon({
+        id: "openseadragon1",
+        prefixUrl: "./openseadragon/images/output_image_1001_to_1500_files/",
+        tileSources: "./openseadragon/images/output_image_1001_to_1500.dzi",
+        visibilityRatio: 4.0,
+        defaultZoomLevel: 3
+      });
+    </script>
+  </div>
+</section>
+
+<!-- Rare traits section -->
+<!-- <section class="content traits" style="background-color:#F29B4E">
+  <div>
+    <div class="headline" style="text-align:center">Crudetraits</div>
+    <img class="image_traits" src="./images/raretraits.jpg" alt="Crudeboys Logo">
+  </div>
+</section> -->
+
+<!-- Data visualization placeholder -->
+<section id="data-visualization">
+</section>
+
+<script >
+
+const embedPromise = new Promise((resolve, reject) => {
+    const embedIframe = document.createElement('iframe');
+    embedIframe.style.height = '80vh';
+    embedIframe.style.width = '100%';
+    embedIframe.onload = () => {
+        const embedScript = embedIframe.contentDocument.createElement('script');
+        embedScript.src = 'https://unpkg.com/@msrvida/sanddance-embed@4/dist/umd/sanddance-embed.js';
+        embedIframe.contentDocument.head.appendChild(embedScript);
+        embedScript.onload = () => resolve(embedIframe);
+        embedScript.onerror = reject;
+    };
+    // Append the iframe to the div with id 'data-visualization' instead of 'document.body'
+    document.getElementById('data-visualization').appendChild(embedIframe);
+});
+
+
+embedPromise.then((embedIframe) => {
+    fetch('inscriptions.json')
+    .then(response => response.json())
+    .then(jsonData => {
+
+        // Transform the data to flatten the attributes for SandDance
+        const transformedData = jsonData.map(item => {
+            const flatData = {
+                id: item.id,
+                name: item.meta.name,
+                image: item.meta.image
+            };
+            // Flatten attributes into the object
+            item.meta.attributes.forEach(attr => {
+                flatData[attr.trait_type.replace(/\s+/g, '_')] = attr.value; // Replace spaces with underscores in trait names
+            });
+            return flatData;
+        });
+
+        // Send the transformed data to the embedded iframe
+        // embedIframe.contentWindow.postMessage({ action: 'load', data: transformedData }, '*');
+        const props = { 
+          theme: 'dark-theme', 
+          initialSidebarClosed: true, 
+          chart: 'stacks', 
+          initialRenderer: { advanced: true },
+        };
+
+        embedIframe.contentWindow.postMessage({ action: 'load', data: transformedData, props }, '*');
+
+    })
+    .catch(error => console.error('Failed to load JSON data:', error));
+});
+
+
+    
+</script>
+
+
+<div id="homepage_merch" style="background-color:black">
+  <div class="content-box">
+    <div class="headline" style="color:red;">Thogmerch</div>
+    <!-- <div class="ibm-plex-mono-regular paragraph" style="color:red;">
+      Crudeboys is a 522 count card collection on doginals based on the 52 card standard playing card deck.<b> Inscription #s 109748927 - 109768927</b>
+    </div> -->
+  </div>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="" src="hoodie_trial.glb" ar environment-image=""  poster="./images/14.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+
+</div>
+
+      <!-- header -->
+      <!-- <header >
+        
+        <h1 id="name">Crudeboys</h1>
+        <p>522 count card collection on doginals based on the 52 card standard playing card deck.
+        </p>
+      </header> -->
+
+
+
+      <!-- footer -->
+      
+
+      <footer>
+        <div class="footer-col">
+
+
+          <!-- <p>Crude website hosted on ARWEAVE</p> -->
+          <!-- <p>Apple, Frontend Dev</p>
+          <p>Contract, Full-time</p> -->
+        </div>
+      </footer>
+    </div>
+
+  
+    
+
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
